@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索</title>
+    <!-- 头部导入 -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <!-- load加载css -->
+    <link rel="stylesheet" href="../css/load.css">
+    <!-- 首页商品可通用 -->
+    <link rel="stylesheet" href="../css/homepageProducts.css">
+    <!-- 提示信息框 -->
+    <link rel="stylesheet" href="../assetes/library/提示message/message.css">
+
+
+    <!-- jQuery文件 -->
+    <script src="../assetes/library/轮播图/jquery-1.11.0.min.js"></script>
+
+        <!-- 自己封装的axios脚本 -->
+        <script src="../src/axios.js"></script>
+
+    <!-- 搜索脚本文件 -->
+    <script src="../src/search.js"></script>
+    <!-- 搜索功能 -->
+    <script src="../src/searchFunction.js"></script>
+
+    <!-- 滚动贴合的头部搜索 -->
+    <script src="../src/scrollSearch.js"></script>
+
+    <!-- 进入详情页 -->
+    <script src="../src/productDetails.js"></script>
+
+    <!-- 判断是否登录 -->
+    <script src="../src/loginOrNot.js"></script>
+
+    <script src="../assetes/library/懒加载/tuupola-jquery_lazyload/jquery.lazyload.min.js"></script>
+</head>
+
+<body>
+    <!-- 加载遮罩层 -->
+    <div class="load" style="z-index: 100;font-size: 20px;font-weight: 700;">
+        <p>加载中...</p>
+    </div>
+
+
+    <!-- 头部 -->
+    <header>
+        <div class="center head">
+            <div class="header_top">
+                <div class="left">
+                    <img src="../assetes/images/logo.png" alt="">
+                </div>
+                <div class="ipt">
+                    <input type="text" placeholder="请输入想要的商品" class="saerchIpt">
+                    <button class="search">搜索</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="Select"><a href="./index.html">首页</a></li>
+                    <li><a href="./signIn.html">登录</a></li>
+                    <li><a href="./register.html">注册</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 贴合的头部 -->
+    <div class="header">
+        <div class="head_mian center">
+            <nav>
+                <ul>
+                    <li class="Select"><a href="./index.html">首页</a></li>
+                    <li><a href="./signIn.html">登录</a></li>
+                    <li><a href="./register.html">注册</a></li>
+                </ul>
+            </nav>
+            <div class="ipt">
+                <input type="text" placeholder="请输入想要的商品" class="saerchIpt2">
+                <button class="search2">搜索</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 商品列表 -->
+    <section>
+        <div class="center">
+            <ul class="homepageProducts">
+                <!-- <li>
+                    <div class="commodityMap">
+                        <img src="../assetes/images/rBACYVzH_sGAfrzRAAA8joHI5YU396.jpg" alt="">
+                    </div>
+                    <p>手冲咖啡6杯装(定制版)</p>
+                    <div class="text">
+                        <p>价格:59￥</p>
+                        <p>爆品</p>
+                    </div>
+                </li>
+                <li> -->
+            </ul>
+            <!-- <h2 class="loading">加载中...</h2> -->
+        </div>
+        <h1 class="No">似乎没有了...</h1>
+    </section>
+    <!-- 退出登录弹框 -->
+    <section class="signOut">
+        <div class="sec_top">
+            <p>提示</p>
+            <p class="close">X</p>
+        </div>
+        <p>是否退出登录？</p>
+        <div class="sec_bottom">
+            <ul>
+                <li>取消</li>
+                <li>确定</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- 返回顶部 -->
+    <div class="to_top">
+        返回
+    </div>
+</body>
+<!-- 提示信息框 -->
+<script src="../assetes/library/提示message/message.js"></script>
+<!-- 判断是否登录 -->
+<script src="../src/loginOrNot.js"></script>
+<script>
+    // 提示信息框的全局配置
+    Qmsg.config({
+        showClose: false,
+        timeout: 1000
+    })
+</script>
+
+</html>

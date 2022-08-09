@@ -1,0 +1,231 @@
+/* 商品展示卡片 */
+
+section {
+    margin-top: 40px;
+}
+
+.homepageProducts {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px 0px;
+}
+
+.special {
+    width: 100% !important;
+    display: block !important;
+    box-shadow: none !important;
+}
+
+.homepageProducts li {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    align-items: center;
+    /* height: 320px; */
+    box-shadow: 0px 0px 5px -3px #000;
+    border-radius: 5px;
+    padding: 20px;
+    box-sizing: border-box;
+    gap: 10px 0px;
+    transition: all 0.4s ease;
+}
+
+.homepageProducts li .commodityMap {
+    width: 192px;
+}
+
+.homepageProducts li .commodityMap img {
+    width: 100%;
+}
+
+.homepageProducts li>p {
+    font-size: 21px;
+}
+
+.homepageProducts li .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.homepageProducts li .text p:nth-child(1) {
+    font-size: 20px;
+}
+
+.homepageProducts li .text p:nth-child(2) {
+    font-size: 22px;
+    margin-top: 20px;
+    padding: 5px 10px;
+    /* background-color: aqua; */
+}
+
+.homepageProducts li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px -6px #000;
+}
+
+
+/* 商品分类左侧目录 */
+
+.sideClassification {
+    width: 130px;
+    /* height: 100px; */
+    background-color: #fff;
+    box-shadow: 0px 0px 5px -2px #000;
+    border: 1px solid #784CFA;
+    position: fixed;
+    top: 250px;
+    left: 1px;
+    z-index: 2;
+    padding: 20px 0px;
+}
+
+.sideClassification ul {
+    display: flex;
+    text-align: center;
+    gap: 1px 0px;
+    flex-direction: column;
+}
+
+.sideClassification ul li {
+    font-size: 18px;
+    height: 20px;
+    cursor: pointer;
+    padding: 5px 0px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    color: #323232;
+}
+
+.sideClassification ul li:hover {
+    background-color: #f0ecff;
+}
+
+section .loading {
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    color: #784CFA;
+    font-weight: 600;
+}
+
+
+/* 贴合的nav和商品搜索 */
+
+.header {
+    z-index: 50;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    left: 0px;
+    top: -100px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px -2px #000;
+    transition: all 0.3s ease;
+}
+
+.header .center {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .center nav {
+    margin-top: 35px;
+}
+
+.header .center nav ul {
+    display: flex;
+    height: 30px;
+    gap: 0px 10px;
+}
+
+.header .center nav ul li {
+    width: 80px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+}
+
+.header .center nav ul .Select {
+    color: #784CFA;
+    border-bottom: 3px solid #784CFA;
+}
+
+.header .center nav ul li:hover {
+    color: #784CFA;
+    border-bottom: 3px solid #784CFA;
+}
+
+.header .center .ipt {
+    width: 502px;
+    height: 42px;
+    border: 2px solid #784CFA;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.header .center .ipt input {
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+
+.header .center .ipt button {
+    border: none;
+    width: 85px;
+    background-color: #784CFA;
+    border-left: 1px solid #784CFA;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.header .center .ipt button:hover {
+    background-color: #c8c8c8;
+    color: #fff;
+}
+
+
+/* 返回顶部 */
+
+.to_top {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 80px;
+    z-index: 10;
+    text-align: center;
+    color: #784CFA;
+    font-weight: 600;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px -1px #000;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+/* 似乎没有了 */
+
+.No {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: #784CFA;
+}

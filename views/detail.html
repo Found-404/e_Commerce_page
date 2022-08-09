@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详情页</title>
+    <!-- 头部导入 -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <!-- load加载css -->
+    <link rel="stylesheet" href="../css/load.css">
+    <!-- 首业分类部分 -->
+    <link rel="stylesheet" href="../css/homePage.css">
+    <!-- 首页商品可通用 -->
+    <link rel="stylesheet" href="../css/homepageProducts.css">
+    <!-- 详情部分css -->
+    <link rel="stylesheet" href="../css/details_main.css">
+    <!-- 提示信息框 -->
+    <link rel="stylesheet" href="../assetes/library/提示message/message.css">
+    <script src="../assetes/library/jQueryCSS3Load/js/pageloader.js"></script>
+
+    <!-- 提示信息框 -->
+    <script src="../assetes/library/提示message/message.js"></script>
+    <!-- 引入jQuery -->
+    <script src="../assetes/library/jQuery/jQuery-min.js"></script>
+    <!-- 自己封装的axios脚本 -->
+    <script src="../src/axios.js"></script>
+    <!-- 商品详情js -->
+    <script src="../src/productDetailsTwo.js"></script>
+
+    <!-- 滚动贴合的头部搜索 -->
+    <script src="../src/scrollSearch.js"></script>
+    <!-- 搜索功能 -->
+    <script src="../src/searchFunction.js"></script>
+
+    <!-- 进入详情页 -->
+    <script src="../src/productDetails.js"></script>
+
+    <!-- 判断是否登录 -->
+    <script src="../src/loginOrNot.js"></script>
+
+
+    <script src="../assetes/library/懒加载/tuupola-jquery_lazyload/jquery.lazyload.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- 加载遮罩层 -->
+    <div class="load" style="z-index: 100;font-size: 20px;font-weight: 700;">
+        <p>加载中...</p>
+    </div>
+    <!-- 退出登录弹框 -->
+    <section class="signOut">
+        <div class="sec_top">
+            <p>提示</p>
+            <p class="close">X</p>
+        </div>
+        <p>是否退出登录？</p>
+        <div class="sec_bottom">
+            <ul>
+                <li>取消</li>
+                <li>确定</li>
+            </ul>
+        </div>
+    </section>
+    <!-- 头部 -->
+    <header>
+        <div class="center head">
+            <div class="header_top">
+                <div class="left">
+                    <img src="../assetes/images/logo.png" alt="">
+                </div>
+                <div class="ipt">
+                    <input type="text" placeholder="请输入想要的商品" class="saerchIpt">
+                    <button class="search">搜索</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class="Select"><a href="./index.html">首页</a></li>
+                    <li><a href="./signIn.html">登录</a></li>
+                    <li><a href="./register.html">注册</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="back_big center">
+        <div class="back">
+            <p>返回</p>
+        </div>
+    </div>
+
+    <!-- 详情部分 -->
+    <div class="details_main">
+
+        <div class="top_img">
+            <!-- <img src="" alt=""> -->
+            <div class="big"></div>
+            <div class="yellow"></div>
+        </div>
+        <div>
+            <div class="productInformation">
+                <p>手冲咖啡6杯装(定制款)</p>
+                <p>价格: 59 ¥</p>
+            </div>
+            <button>加入购物车</button>
+        </div>
+
+    </div>
+
+    <!-- 贴合的头部 -->
+    <div class="header">
+        <div class="head_mian center">
+            <nav>
+                <ul>
+                    <li class="Select"><a href="./index.html">首页</a></li>
+                    <li><a href="./signIn.html">登录</a></li>
+                    <li><a href="./register.html">注册</a></li>
+                </ul>
+            </nav>
+            <div class="ipt">
+                <input type="text" placeholder="请输入想要的商品" class="saerchIpt2">
+                <button class="search2">搜索</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 商品列表 -->
+    <section>
+        <h1>相关商品</h1>
+        <div class="center">
+            <ul class="homepageProducts">
+                <!-- <li>
+                    <div class="commodityMap">
+                        <img src="../assetes/images/rBACYVzH_sGAfrzRAAA8joHI5YU396.jpg" alt="">
+                    </div>
+                    <p>手冲咖啡6杯装(定制版)</p>
+                    <div class="text">
+                        <p>价格:59￥</p>
+                        <p>爆品</p>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+    <!-- 返回顶部 -->
+    <div class="to_top">
+        返回
+    </div>
+
+
+</body>
+
+<!-- 判断是否登录 -->
+<script src="../src/loginOrNot.js"></script>
+<script>
+    // 提示信息框的全局配置
+    Qmsg.config({
+        showClose: false,
+        timeout: 1000
+    })
+</script>
+
+</html>

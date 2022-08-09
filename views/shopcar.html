@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <!-- 头部导入 -->
+    <link rel="stylesheet" href="../css/default.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <!-- load加载css -->
+    <link rel="stylesheet" href="../css/load.css">
+
+    <!-- 购物车css -->
+    <link rel="stylesheet" href="../css/shopcar.css">
+    <!-- 提示信息框 -->
+    <link rel="stylesheet" href="../assetes/library/提示message/message.css">
+    <!-- 引入jQuery -->
+    <script src="../assetes/library/jQuery/jQuery-min.js"></script>
+        <!-- 自己封装的axios脚本 -->
+        <script src="../src/axios.js"></script>
+
+    <!-- 判断是否登录 -->
+    <script src="../src/loginOrNot.js"></script>
+    <!-- 搜索功能 -->
+    <script src="../src/searchFunction.js"></script>
+    <!-- 购物车js -->
+    <script src="../src/shoppingCart.js"></script>
+</head>
+
+<body>
+    <!-- 加载遮罩层 -->
+    <div class="load" style="z-index: 100;font-size: 20px;font-weight: 700;">
+        <p>加载中...</p>
+    </div>
+
+    <!-- 头部 -->
+    <header>
+        <div class="center head">
+            <div class="header_top">
+                <div class="left">
+                    <img src="../assetes/images/logo.png" alt="">
+                </div>
+                <div class="ipt">
+                    <input type="text" placeholder="请输入想要的商品" class="saerchIpt">
+                    <button class="search">搜索</button>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li class=""><a href="./index.html">首页</a></li>
+                    <li class="Select"><a href="./signIn.html">登录</a></li>
+                    <li><a href="./register.html">注册</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 购物车 -->
+    <div class="shopcar">
+        <div>
+            <div class="head_shopcar">
+                <ul>
+                    <li>选择</li>
+                    <li style="margin-left: 230px;">商品详情</li>
+                    <li style="margin-left: 230px;">单价</li>
+                    <li style="margin-left: 180px;">数量</li>
+                    <li style="margin-left: 140px;">价格</li>
+                    <li style="margin-left: 150px;">操作</li>
+                </ul>
+            </div>
+            <ul class="main_uls">
+                <!-- <li>
+                    <div>
+                        <input type="checkbox" name="" class="lis">
+                    </div>
+                    <div class="details">
+                        <img src="" alt="">
+                        <p>ANNY法式深焙袋冲咖啡2袋</p>
+                    </div>
+                    <p class="unit_Price">$12</p>
+                    <div>
+                        <button class="butDown">-</button>
+                        <span>1</span>
+                        <button class="butUp">+</button>
+                    </div>
+                    <p class="zong_Price">12</p>
+                    <p class="del">删除</p>
+                </li> -->
+            </ul>
+            <div class="shopcar_bottom">
+                <div>
+                    <input type="checkbox" name="" class="lis_all">
+                    <label for="">全选</label>
+                    <p>全部删除</p>
+                </div>
+                <div>
+                    <!-- 总价 -->
+                    <p>总价</p>
+                    <p class="total_Price">0</p>
+                    <button class="settlement">结算</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 退出登录弹框 -->
+    <section class="signOut">
+        <div class="sec_top">
+            <p>提示</p>
+            <p class="close">X</p>
+        </div>
+        <p>是否退出登录？</p>
+        <div class="sec_bottom">
+            <ul>
+                <li>取消</li>
+                <li>确定</li>
+            </ul>
+        </div>
+    </section>
+</body>
+<!-- 提示信息框 -->
+<script src="../assetes/library/提示message/message.js"></script>
+<!-- 判断是否登录 -->
+<script src="../src/loginOrNot.js"></script>
+<script>
+    // 提示信息框的全局配置
+    Qmsg.config({
+        showClose: false,
+        timeout: 1000
+    })
+</script>
+
+</html>
